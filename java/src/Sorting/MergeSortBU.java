@@ -1,7 +1,4 @@
-package mergeSort;
-
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
+package Sorting;
 
 public class MergeSortBU {
     public static void merge(int[] a, int[] aux, int lo, int mid, int hi) {
@@ -32,21 +29,4 @@ public class MergeSortBU {
         }
     }
 
-    private static void printOut(int[] a) {
-        for (int i = 0; i < a.length; i++) {
-            StdOut.print(a[i] + ",");
-        }
-    }
-
-    public static void main(String args[]) {
-        int N = 10000;
-        int[] a = new int[N];
-        for (int i = 0; i < N; i++) {
-            a[i] = StdRandom.uniform(0, N);
-        }
-        printOut(a);
-        StdOut.print('\n');
-        sort(a);
-        printOut(a);
-    }
 }

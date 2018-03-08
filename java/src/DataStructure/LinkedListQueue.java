@@ -1,4 +1,4 @@
-package queue;
+package DataStructure;
 
 public class LinkedListQueue<Item> {
 
